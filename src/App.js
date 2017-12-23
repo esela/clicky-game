@@ -7,15 +7,17 @@ class App extends Component {
 
   state = [
     {title: 'Not Set'},
-    {images: Grab.search()},
+    {images: Grab},
     {selected: []},
     {score: 0}
   ]
 
   render() {
     return (
-      <div className="App container">
-        <Navbar title={this.state.title} />
+      <div className="App">
+        <div className="container">
+          <Navbar title={this.state.title} />
+        </div>
       </div>
     );
   }

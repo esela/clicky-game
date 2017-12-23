@@ -1,9 +1,8 @@
 import React from 'react';
 
-const results = () => {
+const results = (images) => {
     return (
-        <div>
-        </div>
+        
     )
 }
 
