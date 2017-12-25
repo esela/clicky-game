@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './Navbar/Navbar'
-import Grab from './utils/api';
+import Navbar from '../components/Navbar/Navbar';
+import Grab from '../utils/api';
 
 class App extends Component {
 
@@ -15,8 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar title={this.state.title} />
-        
+        <Navbar title={this.state.title} />     
       </div>
     );
   }
