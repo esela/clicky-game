@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "alt": "bill",
+        "src": "./assets/images/bill.png"
+    },
+    {
+        "id": 2,
+        "alt": "bobby",
+        "src": "./assets/images/bobby.png"
+    },
+    {
+        "id": 3,
+        "alt": "boomhauer",
+        "src": "./assets/images/boomhauer.png"
+    },
+    {
+        "id": 4,
+        "alt": "dale",
+        "src": "./assets/images/dale.png"
+    },
+    {
+        "id": 5,
+        "alt": "hank",
+        "src": "./assets/images/hank.png"
+    },
+    {
+        "id": 6,
+        "alt": "luanne",
+        "src": "./assets/images/luanne.png"
+    },
+    {
+        "id": 7,
+        "alt": "peg",
+        "src": "./assets/images/peg.png"
+    },
+    {
+        "id": 8,
+        "alt": "propane",
+        "src": "./assets/images/propane.png"
+    },
+    {
+        "id": 9,
+        "alt": "swap",
+        "src": "./assets/images/swap.png"
+    }
+]
