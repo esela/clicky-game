@@ -10,21 +10,22 @@ class App extends Component {
 
   state = {
     selected: [],
-    score: 0,
-    attempts: 0
+    currentScore: 0,
+    highScore: 0
   }
 
   handleClicked = (event) => {
     console.log('Clicked!');
-    this.setState({ setSearch: true });
+    this.setState(
+      { currentScore: this.state.currentScore += 1 }
+    );
   }
 
   render() {
-
     return (
       <div className="App">
-        <Header />
-        <Cards cardList={cardList} />
+        <Header currentScore={this.state.currentScore} highScore={this.state.highScore}/>
+        <Cards cardList={cardList} clicked={this.handleClicked} />
       </div>
     );
   }

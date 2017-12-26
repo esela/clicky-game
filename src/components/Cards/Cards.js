@@ -24,6 +24,7 @@ const cards = (props) => {
                 src={element.src}
                 alt={element.alt}
                 key={index}
+                onClick={props.handleClicked}
             />
         ))}
     </div>
