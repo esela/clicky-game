@@ -1,21 +1,32 @@
 import React from 'react';
-
-import Card from './Card/Card';
+import Radium from 'radium';
+import './Cards.css';
 
 const cards = (props) => {
-    return (
-        <div>
-            {props.cardList.map((card, index) => {
-                <Card
-                    image={card.src}
-                    name={card.id}
-                    clicked={props.clicked}
-                    key={index}
-                />;
-            })
-        }
-        </div>
-    )
-}
 
-export default cards;
+    const style = {
+        width: "175px",
+        height: "175px",
+        margin: "6px",
+        boxShadow: "4px 3px #ccc",
+        borderRadius: "6px",
+        ":hover": {
+            filter: "grayscale(1)"
+        }
+    }
+
+    return (
+    <div className="holder">
+        {props.cardList.map((element, index) => (
+            <img 
+                style={style}
+                className="img"
+                src={element.src}
+                alt={element.alt}
+                key={index}
+            />
+        ))}
+    </div>
+)}
+
+export default Radium(cards);

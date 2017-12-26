@@ -2,46 +2,46 @@
     {
         "id": 1,
         "alt": "bill",
-        "src": "./assets/images/bill.png"
+        "src": "https://vignette.wikia.nocookie.net/kingofthehill/images/3/3a/41597_2306433266_4613_n.jpg/revision/latest/scale-to-width-down/182?cb=20120202152246"
     },
     {
         "id": 2,
         "alt": "bobby",
-        "src": "./assets/images/bobby.png"
+        "src": "https://vignette.wikia.nocookie.net/kingofthehill/images/c/c7/Bobby.png/revision/latest?cb=20150524012917"
     },
     {
         "id": 3,
         "alt": "boomhauer",
-        "src": "./assets/images/boomhauer.png"
+        "src": "http://www.behindthevoiceactors.com/_img/chars/jeff-boomhauer-king-of-the-hill-96.1.jpg"
     },
     {
         "id": 4,
         "alt": "dale",
-        "src": "./assets/images/dale.png"
+        "src": "https://camo.derpicdn.net/29a9ad4cfbd0e40b601db8d4967c8c6fb4d1d244?url=https%3A%2F%2Fretrieverman.files.wordpress.com%2F2012%2F03%2Fdale-gribble.jpg"
     },
     {
         "id": 5,
         "alt": "hank",
-        "src": "./assets/images/hank.png"
+        "src": "https://vignette.wikia.nocookie.net/legendsofthemultiuniverse/images/7/7c/08-King-of-Hill-Hank_l.jpg/revision/latest?cb=20140902033620"
     },
     {
         "id": 6,
         "alt": "luanne",
-        "src": "./assets/images/luanne.png"
+        "src": "https://cdn.costumewall.com/wp-content/uploads/2017/03/luanne-platter.jpg"
     },
     {
         "id": 7,
         "alt": "peg",
-        "src": "./assets/images/peg.png"
+        "src": "https://kingofthehillreviews.files.wordpress.com/2014/08/square-peg.png"
     },
     {
         "id": 8,
         "alt": "propane",
-        "src": "./assets/images/propane.png"
+        "src": "https://vignette1.wikia.nocookie.net/kingofthehill/images/3/3d/StrickLand_Propane.jpg/revision/latest?cb=20091202022844"
     },
     {
         "id": 9,
-        "alt": "swap",
-        "src": "./assets/images/swap.png"
+        "alt": "evil",
+        "src": "https://vignette2.wikia.nocookie.net/p__/images/a/af/Kh1.png/revision/latest?cb=20140424010451&path-prefix=protagonist"
     }
 ]

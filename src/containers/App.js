@@ -4,7 +4,7 @@ import Header from '../components/Header/Header'
 // import Navbar from '../components/Navbar/Navbar';
 // import Grab from '../utils/api';
 import Cards from '../components/Cards/Cards';
-import "../imageList.json";
+import cardList from "../imageList.json";
 
 class App extends Component {
 
@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Cards cardList={images} clicked={this.handleClicked} />
+        <Cards cardList={cardList} />
       </div>
     );
   }
