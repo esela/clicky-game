@@ -15,16 +15,26 @@ class App extends Component {
   handleClicked = (event) => {
     const tempSelect = this.state.selected;
     if (tempSelect.includes(event.target.alt)) {
-      this.setState({ currentScore: 0 })
+      if (this.state.currentScore > this.state.highScore) {
+
+      }
+      const emptySelect = [];
+      this.setState(
+        { 
+          highScore: this.state.currentScore,
+          currentScore: 0,
+          selected: emptySelect
+        }
+      );
       console.log('Already exists!', event.target.alt);
     } else {
       tempSelect.push(event.target.alt);
+      this.setState({
+        currentScore: this.state.currentScore + 1,
+        selected: tempSelect
+      });
+      console.log(this.state.selected);
     }
-    this.setState({ 
-      currentScore: this.state.currentScore + 1,
-      selected: tempSelect
-    });
-    console.log(this.state.selected);
   }
 
   render() {
