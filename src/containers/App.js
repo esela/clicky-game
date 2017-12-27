@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
-import Header from '../components/Header/Header'
+
 import Cards from '../components/Cards/Cards';
 import cardList from "../imageList.json";
+import Header from '../components/Header/Header'
+
+import './App.css';
 
 class App extends Component {
 

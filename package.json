@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.17.1",
     "radium": "^0.19.6",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17",
-    "react-shuffle": "^2.1.0"
+    "react-shuffle-context": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

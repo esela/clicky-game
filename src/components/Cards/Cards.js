@@ -1,5 +1,6 @@
 import React from 'react';
 import Radium from 'radium';
+
 import './Cards.css';
 
 const cards = (props) => {
@@ -17,7 +18,7 @@ const cards = (props) => {
 
     return (
     <div className="holder">
-        {props.cardList.map((element) => (
+        {props.cardList.map(element => (
             <img 
                 style={style}
                 className="img"
