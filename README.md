@@ -1,3 +1,3 @@
 # Clicky Game
 
-[url](https://shielded-hamlet-40618.herokuapp.com/ "Heroku Link")
+[Heroku Link to Game](https://shielded-hamlet-40618.herokuapp.com/ "Heroku Link")
