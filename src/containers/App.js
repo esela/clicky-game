@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     shuffle = (array) => {
-        var currentIndex = array.length,
+        const currentIndex = array.length,
             temporaryValue, randomIndex;
 
         // While there remain elements to shuffle...
