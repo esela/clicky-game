@@ -8,7 +8,7 @@ const cards = (props) => {
     const style = {
         width: "175px",
         height: "175px",
-        margin: "6px",
+        margin: "3px",
         boxShadow: "4px 3px #ccc",
         borderRadius: "6px",
         ":hover": {

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import Cards from '../components/Cards/Cards';
 import cardList from "../imageList.json";
-import Header from '../components/Header/Header'
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 import './App.css';
 
@@ -12,11 +13,12 @@ class App extends Component {
         selected: [],
         imageList: cardList,
         currentScore: 0,
-        highScore: 0
+        highScore: 0,
+        status: 'Just remember which image you clicked last. Easy right?'
     }
 
     shuffle = (array) => {
-        const currentIndex = array.length,
+        let currentIndex = array.length,
             temporaryValue, randomIndex;
 
         // While there remain elements to shuffle...
@@ -45,14 +47,14 @@ class App extends Component {
                     highScore: this.state.currentScore,
                     currentScore: 0,
                     selected: emptySelect,
-                    imageList: tempImage
+                    imageList: tempImage,
+                    status: 'You lost!'
                 });
-            } else {
-                this.setState({
-                    currentScore: 0,
-                    selected: emptySelect,
-                    imageList: tempImage
-                });
+                setTimeout(() => {
+                  this.setState({
+                    status: 'Just remember which image you clicked last. Easy right?'
+                  })
+                }, 3000)
             }
             console.log('Already exists!', event.target.alt);
         } else {
@@ -67,16 +69,18 @@ class App extends Component {
     }
 
     render() {
-        return ( <
-            div className = "App" >
-            <
-            Header currentScore = { this.state.currentScore }
-            highScore = { this.state.highScore }
-            /> <
-            Cards cardList = { this.state.imageList }
-            clicked = { this.handleClicked }
-            /> < /
-            div >
+        return ( 
+          <div className = "App" >
+            <Header
+              currentScore = { this.state.currentScore }
+              highScore = { this.state.highScore }
+            /> 
+            <Cards
+              cardList = { this.state.imageList }
+              clicked = { this.handleClicked }
+            />
+            <Footer status={this.state.status} />
+            </div>
         );
     }
 }
