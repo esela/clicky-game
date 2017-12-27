@@ -17,14 +17,14 @@ const cards = (props) => {
 
     return (
     <div className="holder">
-        {props.cardList.map((element, index) => (
+        {props.cardList.map((element) => (
             <img 
                 style={style}
                 className="img"
                 src={element.src}
                 alt={element.alt}
-                key={index}
-                onClick={props.handleClicked}
+                key={element.id}
+                onClick={props.clicked}
             />
         ))}
     </div>
