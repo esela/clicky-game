@@ -53,10 +53,9 @@ class App extends Component {
                 setTimeout(() => {
                   this.setState({
                     status: 'Just remember which image you clicked last. Easy right?'
-                  })
-                }, 3000)
+                  });
+                }, 2000);
             }
-            console.log('Already exists!', event.target.alt);
         } else {
             tempSelect.push(event.target.alt);
             this.setState({
@@ -64,7 +63,6 @@ class App extends Component {
                 selected: tempSelect,
                 imageList: tempImage
             });
-            console.log(this.state.selected);
         }
     }
 
